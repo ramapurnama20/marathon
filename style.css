@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Oswald", serif;
+}
+
+header {
+  padding: 15px 20px;
+}
+
+form {
+  box-shadow: 0px 0px 5px 3px #202;
+  padding: 15px 25px;
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 12px;
+}
+
+form > section {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+button {
+  font-family: "Oswald",serif;
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: #0a0a0a;
+  border: 0;
+  color: white;
+  border-radius: 12px;
+  transition: transform .1s ease-in-out, background-color .075s ease-in-out;
+}
+
+button:hover {
+  background-color: #0e0e0e;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(95%);
+}
+
+input, textarea, select {
+  outline: 0;
+  border: 1px solid;
+  border-radius: 11px;
+  font-size: 16px;
+  padding: 7px 8px;
+  font-family: "Oswald", serif;
+}
+
+select:hover {
+  cursor: pointer;
+}

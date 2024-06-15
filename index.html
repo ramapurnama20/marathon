@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ramathon - Lari 2024</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ramathon 2024 Registration</h1>
+    </header>
+    <main
+      style="
+        padding: 20px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <form name="registform">
+        <section>
+          <label for="name">Nama</label>
+          <input
+            required
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Isi nama anda"
+          />
+        </section>
+        <section>
+          <label for="email">E-mail</label>
+          <input
+            required
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Isi alamat e-mail aktif anda (user@example.com)"
+          />
+        </section>
+        <section>
+          <label for="gender">Jenis Kelamin</label>
+          <select name="gender" id="gender">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+          </select>
+        </section>
+        <section>
+          <label for="age">Usia</label>
+          <input
+            required
+            type="number"
+            id="age"
+            name="age"
+            min="0"
+            placeholder="Umur anda sekarang"
+          />
+        </section>
+        <section>
+          <label for="preference">Pilihan Jarak</label>
+          <select name="preference" id="preference">
+            <option value="5 KM">5 KM</option>
+            <option value="10 KM">10 KM</option>
+            <option value="Setengah Marathon">Setengah Marathon</option>
+            <option value="Marathon">Marathon</option>
+          </select>
+        </section>
+        <button type="submit">Kirim</button>
+      </form>
+    </main>
+    <script>
+      registform.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Terima kasih sudah mendaftar, sampai jumpa di acara lomba :)");
+      });
+    </script>
+  </body>
+</html>
